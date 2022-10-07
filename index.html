@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fadeIn {
+        animation: fade forwards 1s;
+      }
+
+      .fadeOut {
+        animation: fade forwards 1s reverse;
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="scroll-smooth overflow-hidden">
+    <section
+      class="w-full h-screen absolute z-[99] bg-slate-800 text-white flex items-center justify-center text-2xl font-bold md:hidden"
+    >
+      HARAP BELI PC.<br />
+      Belum Responsif wkwkwk.
+    </section>
+    <header class="flex justify-around items-center p-3 absolute w-full" id="topbar">
+      <h2 class="text-2xl italic">GYM</h2>
+      <nav>
+        <ul class="flex gap-3">
+          <li class="font-semibold">Discover</li>
+          <li class="text-slate-700">Process</li>
+          <li class="text-slate-700">Team</li>
+          <li class="text-slate-700">Pricing</li>
+        </ul>
+      </nav>
+      <button class="py-2 px-3 bg-indigo-700 rounded-lg text-slate-100">Register Now</button>
+    </header>
+    <section class="flex justify-around p-5 gap-10 bg-sky-100" id="hero">
+      <div>
+        <img src="https://source.unsplash.com/100x100?gym%20tools" class="mt-5" alt="" />
+        <h1 class="text-4xl font-bold flex-wrap mt-10 max-w-sm">
+          Get Daily <span class="text-indigo-800">Workouts</span> with Fit-Club
+        </h1>
+        <div class="flex gap-5 mt-5">
+          <button class="py-2 px-9 bg-yellow-400 font-semibold rounded-lg shadow-xl text-sm">
+            Get Started
+          </button>
+          <button class="bg-sky-50 backdrop-blur-lg border border-slate-200 py-2 px-5 w-40 text-sm">
+            Fit Club Member <span class="text-indigo-800">4580+</span>
+          </button>
+        </div>
+      </div>
+      <img src="https://source.unsplash.com/280x400?portrait" alt="" />
+    </section>
+    <section class="bg-indigo-700 p-5 pb-16">
+      <h2 class="text-center text-slate-100 text-lg">Over 32k+ Fit-Club</h2>
+      <div class="flex items-center gap-5 justify-center mt-5">
+        <img
+          src="./assets/google.png"
+          alt=""
+          class="h-10 transition-all delay-100 grayscale hover:grayscale-0"
+        />
+        <img
+          src="./assets/jetbrains.png"
+          alt=""
+          class="h-10 transition-all delay-100 grayscale hover:grayscale-0"
+        />
+        <img
+          src="./assets/microsoft.png"
+          alt=""
+          class="h-10 transition-all delay-100 grayscale hover:grayscale-0"
+        />
+        <img
+          src="./assets/netflix.png"
+          alt=""
+          class="h-10 transition-all delay-100 grayscale hover:grayscale-0"
+        />
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center justify-center">
+        <div class="relative mr-10">
+          <div class="absolute bg-slate-200 p-5 -left-10"></div>
+          <div class="absolute bg-yellow-400 p-3 top-9"></div>
+          <div class="absolute bg-slate-200 p-1 top-7 left-6"></div>
+          <div></div>
+        </div>
+        <h1 class="text-4xl mt-10 font-bold text-center">Popular Accesories</h1>
+      </div>
+      <div class="flex gap-5 mt-20 justify-center">
+        <div class="shadow-xl p-3 px-7">
+          <h2 class="text-center text-xl font-semibold mb-7">Water Bottle</h2>
+          <div class="flex items-center justify-center bg-sky-200 rounded-full p-5">
+            <img src="https://source.unsplash.com/100x100?bottle" alt="" class="rounded-full" />
+          </div>
+          <button
+            class="block mx-auto border border-slate-200 italic py-2 px-4 mt-5 hover:text-indigo-800 hover:border-indigo-800"
+          >
+            Learn More &rightarrow;
+          </button>
+        </div>
+        <div class="shadow-xl p-3 px-7">
+          <h2 class="text-center text-xl font-semibold mb-7">Water Bottle</h2>
+          <div class="flex items-center justify-center bg-sky-200 rounded-full p-5">
+            <img src="https://source.unsplash.com/100x100?bottle" alt="" class="rounded-full" />
+          </div>
+          <button
+            class="block mx-auto border border-slate-200 italic py-2 px-4 mt-5 hover:text-indigo-800 hover:border-indigo-800"
+          >
+            Learn More &rightarrow;
+          </button>
+        </div>
+        <div class="shadow-xl p-3 px-7">
+          <h2 class="text-center text-xl font-semibold mb-7">Water Bottle</h2>
+          <div class="flex items-center justify-center bg-sky-200 rounded-full p-5">
+            <img src="https://source.unsplash.com/100x100?bottle" alt="" class="rounded-full" />
+          </div>
+          <button
+            class="block mx-auto border border-slate-200 italic py-2 px-4 mt-5 hover:text-indigo-800 hover:border-indigo-800"
+          >
+            Learn More &rightarrow;
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-700 p-10 mt-24">
+      <div class="flex justify-between items-center">
+        <h1 class="text-slate-50 text-2xl font-semibold">
+          Our <span class="text-yellow-400">Fit-Club</span> <br />Process
+        </h1>
+        <p class="text-slate-100 text-sm italic max-w-sm">
+          There are many shits of Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+          id!
+        </p>
+      </div>
+      <div class="mt-10 flex items-center justify-around">
+        <div class="flex flex-col items-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k1kI09X8L9Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+          <div class="mt-5 flex gap-1">
+            <div class="p-1 bg-white rounded-full"></div>
+            <div class="py-1 px-3 bg-yellow-400 rounded-full"></div>
+            <div class="p-1 bg-white rounded-full"></div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute h-full left-6 z-0 bg-transparent border-r border-white"></div>
+          <div class="flex flex-col gap-6">
+            <div class="flex gap-3 justify-start items-center">
+              <div class="z-10 px-5 py-3 rounded-full bg-teal-600 text-lg text-white font-semibold">
+                1
+              </div>
+              <p class="text-white font-semibold italic text-lg">Choice your service, for money.</p>
+            </div>
+            <div class="flex gap-3 justify-start items-center">
+              <div class="z-10 px-5 py-3 rounded-full bg-blue-800 text-lg text-white font-semibold">
+                2
+              </div>
+              <p class="text-white font-semibold italic text-lg">Schedule your visit, for look.</p>
+            </div>
+            <div class="flex gap-3 justify-start items-center">
+              <div
+                class="z-10 px-5 py-3 rounded-full bg-yellow-400 text-lg text-white font-semibold"
+              >
+                3
+              </div>
+              <p class="text-white font-semibold italic text-lg">Provide your info, for data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center justify-center">
+        <div class="relative mr-10 -mt-10">
+          <div class="absolute bg-slate-200 p-5 -left-10"></div>
+          <div class="absolute bg-yellow-400 p-3 top-9"></div>
+          <div class="absolute bg-slate-200 p-1 top-7 left-6"></div>
+          <div></div>
+        </div>
+        <h1 class="text-4xl mt-10 font-bold text-center">
+          Meet with our <br />
+          <span class="text-indigo-800">Proffesional</span> Trainer
+        </h1>
+      </div>
+      <div class="flex justify-center gap-6 my-5">
+        <div class="relative group">
+          <img src="https://source.unsplash.com/250x310?potrait" alt="" />
+          <div
+            class="absolute bottom-0 bg-white opacity-0 px-5 w-full transition-all delay-100 group-hover:opacity-80"
+          >
+            <h1 class="font-bold text-xl">Asep Surasep</h1>
+            <p class="italic">Trainer</p>
+          </div>
+        </div>
+        <div class="relative group">
+          <img src="https://source.unsplash.com/250x310?potrait" alt="" />
+          <div
+            class="absolute bottom-0 bg-white opacity-0 px-5 w-full transition-all delay-100 group-hover:opacity-80"
+          >
+            <h1 class="font-bold text-xl">Asep Surasep</h1>
+            <p class="italic">Trainer</p>
+          </div>
+        </div>
+        <div class="relative group">
+          <img src="https://source.unsplash.com/250x310?potrait" alt="" />
+          <div
+            class="absolute bottom-0 bg-white opacity-0 px-5 w-full transition-all delay-100 group-hover:opacity-80"
+          >
+            <h1 class="font-bold text-xl">Asep Surasep</h1>
+            <p class="italic">Trainer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center justify-center">
+        <div class="relative mr-10 -mt-10">
+          <div class="absolute bg-slate-200 p-5 -left-10"></div>
+          <div class="absolute bg-slate-400 p-3 top-9"></div>
+          <div class="absolute bg-slate-200 p-1 top-7 left-6"></div>
+          <div></div>
+        </div>
+        <h1 class="text-4xl mt-10 font-bold text-center">
+          Choose your best <br />
+          <span class="text-yellow-400">Pricing</span>
+        </h1>
+      </div>
+      <div class="my-5 flex justify-center gap-6 p-10">
+        <div class="py-3 px-5 shadow-lg w-full max-w-sm rounded-lg">
+          <img src="https://source.unsplash.com/50x50" class="rounded-full" alt="" />
+          <h2 class="font-bold text-3xl mt-5">$100 <span class="text-sm italic">/month</span></h2>
+          <p class="text-indigo-800 font-bold">SILVER PLAN</p>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <button class="mt-3 border-2 border-indigo-800 p-3 rounded w-full">
+            Start Free Trial
+          </button>
+        </div>
+        <div class="py-3 px-5 shadow-lg bg-indigo-800 w-full max-w-sm rounded-lg">
+          <img src="https://source.unsplash.com/50x50" class="rounded-full" alt="" />
+          <h2 class="font-bold text-3xl mt-5 text-white">
+            $100 <span class="text-sm italic">/month</span>
+          </h2>
+          <p class="font-bold text-white">GOLD PLAN</p>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-white px-2 py-1 text-yellow-400 rounded-full">&check;</div>
+            <p class="text-white">Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-white px-2 py-1 text-yellow-400 rounded-full">&check;</div>
+            <p class="text-white">Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-white px-2 py-1 text-yellow-400 rounded-full">&check;</div>
+            <p class="text-white">Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-white px-2 py-1 text-yellow-400 rounded-full">&check;</div>
+            <p class="text-white">Open Gym</p>
+          </div>
+          <button class="mt-3 border-2 border-transparent bg-yellow-500 p-3 rounded w-full">
+            Start Free Trial
+          </button>
+        </div>
+        <div class="py-3 px-5 shadow-lg w-full max-w-sm rounded-lg">
+          <img src="https://source.unsplash.com/50x50" class="rounded-full" alt="" />
+          <h2 class="font-bold text-3xl mt-5">$100 <span class="text-sm italic">/month</span></h2>
+          <p class="text-indigo-800 font-bold">SILVER PLAN</p>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <div class="flex justify-start gap-2 my-3">
+            <div class="bg-slate-400 px-2 py-1 text-white rounded-full">&check;</div>
+            <p>Open Gym</p>
+          </div>
+          <button class="mt-3 border-2 border-indigo-800 p-3 rounded w-full">
+            Start Free Trial
+          </button>
+        </div>
+      </div>
+    </section>
+    <button
+      class="fixed z-10 bottom-10 right-5 py-4 px-6 text-2xl bg-indigo-800 text-white rounded-full shadow-lg hidden"
+      id="scroll-up"
+    >
+      &UpArrow;
+    </button>
+    <footer class="bg-slate-200 py-10 px-10 flex justify-around items-start">
+      <div>
+        <h2 class="font-bold text-2xl italic">GYM</h2>
+        <p class="text-lg">Subcribe</p>
+        <div class="flex mt-5">
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="p-3 bg-white rounded-lg focus:outline-none"
+          />
+          <button class="p-3 bg-indigo-800 text-white rounded-lg">&RightArrow;</button>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl">Classes</h3>
+        <ul class="mt-5">
+          <li class="font-bold">BODY BUILDING</li>
+          <li>WEIGHT LOSS</li>
+          <li>INDOOR CYCLING</li>
+          <li>HEAVY WEIGHT</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl">Useful Links</h3>
+        <ul class="mt-5">
+          <li>About Us</li>
+          <li>Service</li>
+          <li>Team</li>
+          <li>News Blog</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl">Location & Contact</h3>
+        <p class="mt-5">Jalan dimana saja aku pun gatua ini sebenranya jalan mana</p>
+        <p class="mt-3">(888) 2838 2084</p>
+      </div>
+    </footer>
+    <script>
+      const topbar = document.querySelector("#topbar");
+      const hero = document.querySelector("#hero");
+
+      hero.style = `padding-top: ${topbar.clientHeight}px`;
+      const scrollUp = document.querySelector("#scroll-up");
+
+      scrollUp.addEventListener("click", () => {
+        window.scroll({ top: 0 });
+      });
+
+      const showScrollUpButton = () => {
+        if (!scrollUp.classList.contains("hidden") || scrollUp.classList.contains("fadeIn")) {
+          return;
+        }
+
+        scrollUp.classList.remove("hidden");
+        scrollUp.classList.add("fadeIn");
+        setTimeout(() => {
+          scrollUp.classList.remove("fadeIn");
+        }, 1500);
+      };
+
+      const hideScrollUpButton = () => {
+        if (scrollUp.classList.contains("hidden") || scrollUp.classList.contains("fadeOut")) {
+          return;
+        }
+
+        scrollUp.classList.add("fadeOut");
+        setTimeout(() => {
+          scrollUp.classList.remove("fadeOut");
+          scrollUp.classList.add("hidden");
+        }, 1500);
+      };
+
+      let userHasScroll;
+
+      window.onscroll = () => {
+        const scrollLength =
+          window.pageYOffset ||
+          (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        console.log(parseInt(scrollLength));
+        if (scrollLength >= 64) {
+          showScrollUpButton();
+        } else {
+          hideScrollUpButton();
+        }
+      };
+
+      // Disable Scroll on mobile
+      if (window.matchMedia("(max-width: 767px)").matches) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "latihan-slicing",
+  "version": "1.0.0",
+  "description": "This is a Front End Implementation of Dribble Fitness.\r Design by [Abu Bokkor Siddik](https://dribbble.com/abustudio).",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start  --server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
